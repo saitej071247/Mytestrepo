@@ -1,0 +1,17 @@
+---
+pull_requests:
+
+  # @see https://github.pie.apple.com/iossys-devops/pull-request-creator#the-appyml
+  auto_create:
+  auto_merge:
+    branches:
+      - master
+    exclude:
+      labels:
+        - work-in-progress
+  approvals:
+    number_required: 3
+    team: approvers
+    exempt:
+      creator:
+        - iautobot
